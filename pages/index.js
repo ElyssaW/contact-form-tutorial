@@ -44,17 +44,17 @@ export default function Home() {
 
         < formGroup className={styles.inputGroup} >
           < label htmlFor='name'>Name</label>
-          < input type='text' onChange={(e)=>{setName(e.target.value)}} name='name' className={styles.inputField} />
+          < input type='text' onChange={(e)=>{setName(e.target.value)}} name='name' className={styles.inputField} value={name} />
         </formGroup>
 
         < formGroup className={styles.inputGroup} >
           < label htmlFor='email'>Email</label>
-          < input type='email' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
+          < input type='email' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} value={email} />
         </formGroup>
 
         < formGroup className={styles.inputGroup} >
           < label htmlFor='message'>Message</label>
-          < input type='text' onChange={(e)=>{setMessage(e.target.value)}} name='message' className={styles.inputField} />
+          < input type='text' onChange={(e)=>{setMessage(e.target.value)}} name='message' className={styles.inputField} value={message} />
         </formGroup>
 
         < input type='submit' onClick={(e)=>{handleSubmit(e)}}/>
